@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             name.setError("Enter a Name");
         }else {
             String nameVal = name.getText().toString();
-            DataStorage data = com.example.cs441project2.DataStorage.getInstance();
+            DataStorage data = DataStorage.getInstance();
             data.setName(nameVal);
         }
         Intent second_activity = new Intent(getApplicationContext(), SecondActivity.class);
