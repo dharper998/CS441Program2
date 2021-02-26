@@ -10,19 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
-import android.widget.Button;
 
-public class SecondActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
-        Button switch_button = findViewById(R.id.switch_button);
+        setContentView(R.layout.activity_third);
     }
 
     public void changeActivity(View view){
-        Intent third_activity = new Intent(getApplicationContext(), ThirdActivity.class);
-        startActivity(third_activity);
+        Intent second_activity = new Intent(getApplicationContext(), SecondActivity.class);
+        startActivity(second_activity);
     }
 }

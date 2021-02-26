@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CS441Project2">
         <activity
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third"
+            android:theme="@style/Theme.CS441Project2.NoActionBar"></activity>
+        <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second"
-            android:theme="@style/Theme.CS441Project2.NoActionBar"></activity>
+            android:theme="@style/Theme.CS441Project2.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
